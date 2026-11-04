@@ -1,0 +1,12 @@
+﻿{
+  "id": "SlayTheTismII",
+  "name": "Slay The Tism II",
+  "author": "Reznolf",
+  "description": "Here be 'tism to be slain too.",
+  "version": "v1.0.0",
+  "min_game_version": "0.107.0",
+  "has_pck": false,
+  "has_dll": true,
+  "dependencies": [],
+  "affects_gameplay": false
+}

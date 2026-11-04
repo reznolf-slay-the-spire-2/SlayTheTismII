@@ -1,0 +1,46 @@
+Slay The Tism II - v1.0.0
+=========================
+
+Here be 'tism to be slain.
+
+Replaces the main-menu title logo. The original title is a Spine (skeletal) animation, so this mod
+hides its text with a discard shader and draws the replacement art over the same bounds. The potion
+flames the skeleton scatters around the title are kept, including the one on the "i".
+
+
+Install
+-------
+1. Close Slay the Spire 2.
+2. Copy the "SlayTheTismII" folder into:
+     <Steam library>\steamapps\common\Slay the Spire 2\mods\
+   (Create the "mods" folder if it does not exist.)
+3. Launch the game and enable "Slay The Tism II" in Settings -> Mod Settings.
+
+The folder must contain:
+
+  SlayTheTismII.json   manifest (required)
+  SlayTheTismII.dll    the mod (required)
+  Title.png            the replacement title art (required)
+  mod_image.png        preview image for the in-game mod list (optional)
+  SlayTheTismII.pdb    debug symbols (optional)
+
+
+Uninstall
+---------
+Delete the "SlayTheTismII" folder from mods/.
+
+
+Notes
+-----
+- Requires Slay the Spire 2 v0.107.0 or newer. Built against v0.111.0.
+- No game files are modified; removing the folder restores the vanilla title.
+- Optional tuning file: create "logo.json" next to the DLL with:
+    {
+      "delay": 0,
+      "fade": 0.6,
+      "scale": 1.0,
+      "offset_x": 0,
+      "offset_y": 0,
+      "hide_vanilla": true,
+      "keep_fires": true
+    }
